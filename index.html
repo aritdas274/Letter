@@ -5,11 +5,12 @@
   <title>Love Letter Popup</title>
   <style>
     body {
-      background-image: url('canva-pink-white-watercolor-floral-instagram-story-background-1P2cYYQ3wEE.jpg'); /* Replace with your image URL */
+      background-image: url('https://i.ibb.co/4np06Lht/canva-pink-white-watercolor-floral-instagram-story-background-1-P2c-YYQ3w-EE.jpg'); /* Replace with your image URL */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
@@ -18,8 +19,7 @@
     }
 
     .popup {
-      background: #ea8d80;
-      colour: white;
+      background: white;
       padding: 30px 40px;
       border-radius: 16px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.2);
@@ -29,6 +29,16 @@
       animation: popupFade 1.5s ease forwards;
       z-index: 10;
       position: relative;
+    }
+    
+    p{
+        background-color: #778f6b;
+        color: white;
+        border-radius: 16px;
+        padding: 30px 40px;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        font-size: 50px;
     }
 
     @keyframes popupFade {
@@ -57,6 +67,8 @@
   </style>
 </head>
 <body>
+
+<p id="heading">যদি তুমি চাও</p>
 
 <div class="popup">
   <div class="typewriter" id="letter"></div>
